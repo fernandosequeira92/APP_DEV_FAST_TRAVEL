@@ -23,15 +23,15 @@
 
 .nav-item{
   /* background-color: red; */
-  /*border-radius: 50px;*/
-  border: 1px solid black;
+  border-radius: 50px;
+  border: 1px solid #212529;
   transform:scale(0.9,0.9);
   transition: 0.25s;
   }  
 .nav-item:hover{
     border: 1.5px solid #00AAFF;
     border-color: #00AAFF;
-    /*border-radius: 50px;*/
+    border-radius: 50px;
     transform:scale(1,1);
     transition: 0.25s;
 
