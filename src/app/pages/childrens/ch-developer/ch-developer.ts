@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-ch-developer',
   imports: [],
   templateUrl: './ch-developer.html',
-  styleUrl: '../../../home/home.css',
+  styleUrl: '../../home/home.css',
 })
 export class ChDeveloper {
 

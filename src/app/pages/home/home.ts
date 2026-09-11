@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ChDeveloper } from '../childrens/childrens/ch-developer/ch-developer';
-import { ChFrameworks } from "../childrens/childrens/ch-frameworks/ch-frameworks";
+import { ChDeveloper } from '../childrens/ch-developer/ch-developer';
+import { ChFrameworks } from "../childrens/ch-frameworks/ch-frameworks";
 
 @Component({
   selector: 'app-home',
