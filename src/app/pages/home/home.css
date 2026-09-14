@@ -2,21 +2,23 @@
 .link_box {
   border-width: 1px;
   border-style: solid;
-  border-radius: 15px;
-  transform: scale(0.8, 0.8);
-  border-color: #c6c9cc;
+  border-radius: 30px;
+  transform: scale(0.7, 0.7);
+  border-color: #12569b;
   transition-duration: 0.25s;
   filter: grayscale(100%);
+  /* filter: blur(5px); */
 }
 .link_box:hover {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  border-radius: 15px;
-  transform: scale(0.95, 0.95);
-  border-color: #babcbf;
+  border-radius: 30px;
+  transform: scale(0.9, 0.9);
+  border-color: #287ed4;
   background-color: #f8f9fa;
-  transition-duration: 0.1s;
+  transition-duration: 0.25s;
   filter: grayscale(0%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .link_img {
@@ -100,18 +102,6 @@
   -webkit-overflow-scrolling: touch;
 }
 
-/* .pagina {
-  opacity: 0;
-  transform: translateX(-100px);
-
-  max-height: 0;
-  overflow: hidden;
-  pointer-events: none;
-
-  transition:
-    opacity 1s ease,
-    transform 1s ease;
-} */
 .container-paginas {
   display: grid;
   overflow: hidden;
@@ -143,4 +133,71 @@
 .logo_children{
   border-radius: 15px;
   transform: scale(0.9, 0.9);
+}
+
+/*BACKGROUND ANIMADO*/
+.home {
+  min-height: calc(100vh - 58px - 56px);
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      ellipse at 20% 50%,
+      rgba(0, 174, 255, 0.35),
+      transparent 45%
+    ),
+    radial-gradient(
+      ellipse at 80% 50%,
+      rgba(0, 174, 255, 0.35),
+      transparent 45%
+    ),
+    #05080c;
+
+  background-size: 200% 200%;
+
+  animation: fundoAnimado 10s ease-in-out infinite alternate;
+    transition-duration: 0.25s;
+}
+
+
+.content {
+  min-height: calc(100vh - 58px - 56px);
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      ellipse at 80% 50%,
+      rgba(255, 255, 255 , 1),
+      transparent 45%
+    );
+
+  background-size: 200% 200%;
+}
+
+
+
+@keyframes fundoAnimado {
+
+  0% {
+    background-position:
+      0% 30%,
+      100% 70%;
+  }
+
+  50% {
+    background-position:
+      60% 70%,
+      40% 30%;
+  }
+
+  100% {
+    background-position:
+      100% 40%,
+      0% 60%;
+  }
+
 }

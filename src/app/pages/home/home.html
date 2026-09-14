@@ -1,53 +1,64 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-12 col-xl-11">
+<div [class.home]="menuAtual === 'home'"
+     [class.content]="menuAtual !== 'home'">
+     
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-11">
 
-      <div class="container-paginas">
+        <div class="container-paginas">
 
-        <div
-          class="pagina"
-          [class.visivel]="menuAtual === 'developer'"
-          [class.invisivel]="menuAtual !== 'developer'">
-          <app-ch-developer></app-ch-developer>
-        </div>
+          <div
+            class="pagina"
+            [class.visivel]="menuAtual === 'home'"
+            [class.invisivel]="menuAtual !== 'home'">
+            <app-ch-index></app-ch-index>
+          </div>
 
-        <div
-          class="pagina"
-          [class.visivel]="menuAtual === 'frameworks'"
-          [class.invisivel]="menuAtual !== 'frameworks'">
-          <app-ch-frameworks></app-ch-frameworks>
-        </div>
+          <div
+            class="pagina"
+            [class.visivel]="menuAtual === 'developer'"
+            [class.invisivel]="menuAtual !== 'developer'">
+            <app-ch-developer></app-ch-developer>
+          </div>
 
-        <div
-          class="pagina"
-          [class.visivel]="menuAtual === 'ia'"
-          [class.invisivel]="menuAtual !== 'ia'">
-          <app-ch-int-artificial></app-ch-int-artificial>
-        </div>
+          <div
+            class="pagina"
+            [class.visivel]="menuAtual === 'frameworks'"
+            [class.invisivel]="menuAtual !== 'frameworks'">
+            <app-ch-frameworks></app-ch-frameworks>
+          </div>
 
-        <div
-          class="pagina"
-          [class.visivel]="menuAtual === 'repositorios'"
-          [class.invisivel]="menuAtual !== 'repositorios'">
-          <app-ch-repositorio></app-ch-repositorio>
-        </div>
+          <div
+            class="pagina"
+            [class.visivel]="menuAtual === 'ia'"
+            [class.invisivel]="menuAtual !== 'ia'">
+            <app-ch-int-artificial></app-ch-int-artificial>
+          </div>
 
-        <div
-          class="pagina"
-          [class.visivel]="menuAtual === 'multimidia'"
-          [class.invisivel]="menuAtual !== 'multimidia'">
-          <app-ch-multimidia></app-ch-multimidia>
-        </div>
+          <div
+            class="pagina"
+            [class.visivel]="menuAtual === 'repositorios'"
+            [class.invisivel]="menuAtual !== 'repositorios'">
+            <app-ch-repositorio></app-ch-repositorio>
+          </div>
 
-        <div
-          class="pagina"
-          [class.visivel]="menuAtual === 'ferramentas'"
-          [class.invisivel]="menuAtual !== 'ferramentas'">
-          <app-ch-ferramentas></app-ch-ferramentas>
+          <div
+            class="pagina"
+            [class.visivel]="menuAtual === 'multimidia'"
+            [class.invisivel]="menuAtual !== 'multimidia'">
+            <app-ch-multimidia></app-ch-multimidia>
+          </div>
+
+          <div
+            class="pagina"
+            [class.visivel]="menuAtual === 'ferramentas'"
+            [class.invisivel]="menuAtual !== 'ferramentas'">
+            <app-ch-ferramentas></app-ch-ferramentas>
+          </div>
+
         </div>
 
       </div>
-
     </div>
   </div>
 </div>
