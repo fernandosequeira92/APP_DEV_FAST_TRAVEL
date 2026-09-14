@@ -12,4 +12,11 @@ import { Home } from './pages/home/home';
 })
 export class App {
   protected title = 'dev_fast_travel';
+
+  menuSelecionado: string = 'Developer';
+
+  trocarMenu(menu: string) {
+    this.menuSelecionado = menu;
+  }
+
 }

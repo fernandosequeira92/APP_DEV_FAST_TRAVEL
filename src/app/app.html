@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
-<app-home></app-home>
-<router-outlet />
+<app-navbar (menuSelecionado)="trocarMenu($event)"></app-navbar>
+<app-home [menuAtual]="menuSelecionado"></app-home>
+<!-- <router-outlet /> -->
 <app-footer></app-footer>

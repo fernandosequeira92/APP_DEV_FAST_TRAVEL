@@ -1,17 +1,4 @@
-/* .jumbotron_customA {
-  padding-top: 5%;
-  padding-bottom: 2%;
-}
-@media (max-width: 1000px) {
-  .jumbotron_customA {
-    padding-top: 5%;
-    padding-bottom: 2%;
-  }
-}
-.jumbotron_customB {
-  padding-top: 3%;
-  padding-bottom: 2%;
-} */
+
 .link_box {
   border-width: 1px;
   border-style: solid;
@@ -111,4 +98,49 @@
   text-align: center;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
+}
+
+/* .pagina {
+  opacity: 0;
+  transform: translateX(-100px);
+
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+} */
+.container-paginas {
+  display: grid;
+  overflow: hidden;
+}
+
+.pagina {
+  grid-column: 1;
+  grid-row: 1;
+
+  width: 100%;
+
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease;
+}
+
+.pagina.invisivel {
+  opacity: 0;
+  transform: translateX(80px);
+  pointer-events: none;
+}
+
+.pagina.visivel {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.logo_children{
+  border-radius: 15px;
+  transform: scale(0.9, 0.9);
 }

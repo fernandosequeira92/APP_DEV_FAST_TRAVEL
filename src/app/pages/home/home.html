@@ -1,62 +1,53 @@
-<div class="container py-4">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-xl-11">
 
-    <app-ch-developer></app-ch-developer>
-    <app-ch-frameworks></app-ch-frameworks>
-    <app-ch-int-artificial></app-ch-int-artificial>
-    <app-ch-multimidia></app-ch-multimidia>
-    <app-ch-repositorio></app-ch-repositorio>
-    <app-ch-ferramentas></app-ch-ferramentas>
-<!--     
-    <div class="row">
-      <div class="col-md-12 jumbotron_customB">
-        <div class="h-100 p-3 bg-light border rounded-3">
-          <h2>Ferramentas de TI:</h2>
-          <p>Os links abaixo direcionam você para as páginas relacionadas as ferramentas de TI utilizadas por ABAP's' e funcionais SAP.
-          <br>Ferramentas de auxílio para os módulos ETM, FI, SD, CO, MM, HR e ABAP.</p>
+      <div class="container-paginas">
+
+        <div
+          class="pagina"
+          [class.visivel]="menuAtual === 'developer'"
+          [class.invisivel]="menuAtual !== 'developer'">
+          <app-ch-developer></app-ch-developer>
         </div>
+
+        <div
+          class="pagina"
+          [class.visivel]="menuAtual === 'frameworks'"
+          [class.invisivel]="menuAtual !== 'frameworks'">
+          <app-ch-frameworks></app-ch-frameworks>
+        </div>
+
+        <div
+          class="pagina"
+          [class.visivel]="menuAtual === 'ia'"
+          [class.invisivel]="menuAtual !== 'ia'">
+          <app-ch-int-artificial></app-ch-int-artificial>
+        </div>
+
+        <div
+          class="pagina"
+          [class.visivel]="menuAtual === 'repositorios'"
+          [class.invisivel]="menuAtual !== 'repositorios'">
+          <app-ch-repositorio></app-ch-repositorio>
+        </div>
+
+        <div
+          class="pagina"
+          [class.visivel]="menuAtual === 'multimidia'"
+          [class.invisivel]="menuAtual !== 'multimidia'">
+          <app-ch-multimidia></app-ch-multimidia>
+        </div>
+
+        <div
+          class="pagina"
+          [class.visivel]="menuAtual === 'ferramentas'"
+          [class.invisivel]="menuAtual !== 'ferramentas'">
+          <app-ch-ferramentas></app-ch-ferramentas>
+        </div>
+
       </div>
 
-     <div class="col-lg-2 text-center link_box">
-        <img src="images/content/icon_diagrams.png" class="link_img bd-placeholder-img rounded-circle" width="140" height="140" alt="Diagrams">
-        <h2 class="fw-normal">Diagrams</h2>
-        <p>Trabalhe com UML</p>
-        <p><a class="btn btn-secondary" href="https://app.diagrams.net/">Acessar &raquo;</a></p>
-      </div>
-      
-      <div class="col-lg-2 text-center link_box">
-        <img src="images/content/icon_planner.png" class="link_img bd-placeholder-img rounded-circle" width="140" height="140" alt="Planner">
-        <h2 class="fw-normal">Planner</h2>
-        <p>Quadro Kanban</p>
-        <p><a class="btn btn-secondary" href="https://tasks.office.com/mills.com.br/pt-BR/Home/Planner/#/plantaskboard?groupId=3fb4bcbe-eab8-4323-981a-487af1bb2f86&amp;planId=9-xZDBm3dUqJPKN892fTmGUAFkLy">Acessar &raquo;</a></p>
-      </div>
-
-      <div class="col-lg-2 text-center link_box">
-        <img src="images/content/icon_cwheel.png" class="link_img bd-placeholder-img rounded-circle" width="140" height="140" alt="Adobe Color">
-        <h3 class="fw-normal">Adobe Color</h3>
-        <p>Roda de Cores</p>
-        <p><a class="btn btn-secondary" href="https://color.adobe.com/pt/">Acessar &raquo;</a></p>
-      </div>
-      
-      <div class="col-lg-2 text-center link_box">
-        <img src="images/content/icon_w3s.png" class="link_img bd-placeholder-img rounded-circle" width="140" height="140" alt="W3Schools">
-        <h2 class="fw-normal">W3Schools</h2>
-        <p>Conhecimentos HTML</p>
-        <p><a class="btn btn-secondary" href="https://www.w3schools.com/">Acessar &raquo;</a></p>
-      </div>
-      
-      <div class="col-lg-2 text-center link_box">
-        <img src="images/content/icon_youtube.png" class="link_img bd-placeholder-img rounded-circle" width="140" height="140" alt="YouTube">
-        <h2 class="fw-normal">YouTube</h2>
-        <p>Plataforma de Vídeos</p>
-        <p><a class="btn btn-secondary" href="https://youtube.com">Acessar &raquo;</a></p>
-      </div>
-      
-      <div class="col-lg-2 text-center link_box">
-        <img src="images/content/icon_abap_zombie_2.gif" class="link_img bd-placeholder-img rounded-circle" width="140" height="140" alt="Abap Zombie">
-        <h4 class="fw-normal">Abap Zombie</h4>
-        <p>Tutoriais ABAP</p>
-        <p><a class="btn btn-secondary" href="https://www.abapzombie.com/">Acessar &raquo;</a></p>
-      </div>
-    </div> -->
-
-</div>/
+    </div>
+  </div>
+</div>

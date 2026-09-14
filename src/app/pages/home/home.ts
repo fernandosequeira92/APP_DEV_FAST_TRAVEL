@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ChDeveloper } from '../childrens/ch-developer/ch-developer';
 import { ChFrameworks } from "../childrens/ch-frameworks/ch-frameworks";
 import { ChIntArtificial } from '../childrens/ch-int-artificial/ch-int-artificial';
@@ -21,5 +21,5 @@ import { ChFerramentas } from "../childrens/ch-ferramentas/ch-ferramentas";
   styleUrl: './home.css',
 })
 export class Home {
-
+  @Input() menuAtual: string = 'developer';
 }
